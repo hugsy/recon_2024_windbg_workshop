@@ -1,0 +1,12 @@
+<Configuration>
+  <MemoryInMB>512</MemoryInMB>
+  <vGpu>Disable</vGpu>
+  <Networking>Enable</Networking>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\temp</HostFolder>
+      <SandboxFolder>C:\temp</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+</Configuration>

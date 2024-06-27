@@ -1,0 +1,33 @@
+#pragma once
+#include <string_view>
+
+namespace Info
+{
+// clang-format off
+///
+///@brief
+///
+constexpr std::wstring_view LibraryName    = L"@PROJECT_NAME@";
+
+///
+///@brief
+///
+constexpr std::wstring_view LibraryAuthor  = L"@PROJECT_AUTHOR@";
+
+///
+///@brief
+///
+constexpr std::wstring_view LibraryLicense = L"@PROJECT_LICENSE@";
+
+///
+///@brief
+///
+constexpr std::wstring_view LibraryBanner = L"@PROJECT_NAME@" L" v" L"@PROJECT_VERSION_MAJOR@" L"."  L"@PROJECT_VERSION_MINOR@" L"." L"@PROJECT_VERSION_PATCH@";
+
+struct Version {
+    const static uint8_t Major = @PROJECT_VERSION_MAJOR@;
+    const static uint8_t Minor = @PROJECT_VERSION_MINOR@;
+    const static uint32_t Patch = @PROJECT_VERSION_PATCH@;
+};
+}// clang-format
+
